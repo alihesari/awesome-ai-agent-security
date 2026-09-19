@@ -8,6 +8,7 @@ Defensive focus. Every entry links to its original source.
 
 - [Frameworks and Standards](#frameworks-and-standards)
 - [Research Papers](#research-papers)
+- [Incidents and Writeups](#incidents-and-writeups)
 <!-- toc-end -->
 
 ## Frameworks and Standards
@@ -68,6 +69,40 @@ Defensive focus. Every entry links to its original source.
 - [Prompt Injection Attack against LLM-integrated Applications](https://arxiv.org/abs/2306.05499) - 2023. Black-box study of prompt injection against real LLM-integrated applications.
 - [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) - 2023. Paper that defined indirect prompt injection through retrieved content.
 - [Ignore Previous Prompt: Attack Techniques For Language Models](https://arxiv.org/abs/2211.09527) - 2022. Early study of goal hijacking and prompt leaking.
+
+## Incidents and Writeups
+
+- [AgentFlayer: ChatGPT Connectors 0-click attack](https://labs.zenity.io/p/agentflayer-chatgpt-connectors-0click-attack-5b41) - Zenity Labs writeup of a poisoned shared document exfiltrating Google Drive secrets through ChatGPT Connectors.
+- [Amazon Q Developer extension code injection (AWS-2025-015)](https://aws.amazon.com/security/security-bulletins/AWS-2025-015/) - AWS bulletin on a malicious prompt merged into the Amazon Q VS Code extension release.
+- [Comet browser indirect prompt injection](https://brave.com/blog/comet-prompt-injection/) - Brave's disclosure of webpage content hijacking an agentic browser to reach user accounts.
+- [Cursor MCPoison (CVE-2025-54136)](https://research.checkpoint.com/2025/cursor-vulnerability-mcpoison/) - Check Point Research on silently swapping an approved MCP config for a malicious command.
+- [CurXecute: RCE in Cursor via MCP auto-start (CVE-2025-54135)](https://www.catonetworks.com/blog/curxecute-rce/) - Aim Labs writeup of prompt injection writing an MCP config that Cursor executed before approval.
+- [Disrupting the first reported AI-orchestrated cyber espionage campaign](https://www.anthropic.com/news/disrupting-AI-espionage) - Anthropic threat intelligence report on a state actor using an agentic coding tool to run intrusions.
+- [EchoLeak advisory (CVE-2025-32711)](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32711) - Microsoft's advisory for the M365 Copilot information disclosure fixed server-side.
+- [EchoLeak: zero-click Microsoft 365 Copilot exfiltration](https://www.catonetworks.com/blog/breaking-down-echoleak/) - Aim Labs breakdown of an email-borne injection that leaked Copilot context through an allowed domain.
+- [ForcedLeak in Salesforce Agentforce](https://noma.security/blog/forcedleak-agent-risks-exposed-in-salesforce-agentforce/) - Noma Security on web-to-lead form injection and an expired allowlisted domain used to exfiltrate CRM data.
+- [Gemini CLI code execution via deception](https://tracebit.com/blog/code-exec-deception-gemini-ai-cli-hijack) - Tracebit on a README injection plus an allowlist bypass that ran hidden commands in Gemini CLI.
+- [GitHub Copilot remote code execution via prompt injection (CVE-2025-53773)](https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/) - Injection that flipped Copilot into auto-approve mode by editing workspace settings.
+- [GitHub MCP exploited: accessing private repositories](https://invariantlabs.ai/blog/mcp-github-vulnerability) - Invariant Labs on a malicious public issue making an agent leak private repository data through the GitHub MCP server.
+- [GitLab Duo remote prompt injection](https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo) - Legit Security on hidden comments steering GitLab Duo to leak private source code.
+- [Google Bard data exfiltration](https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/) - Early demonstration of markdown image rendering as an exfiltration channel from a chat assistant.
+- [Jumping the line: how MCP servers can attack you before you use them](https://blog.trailofbits.com/2025/04/21/jumping-the-line-how-mcp-servers-can-attack-you-before-you-ever-use-them/) - Trail of Bits on tool descriptions injecting instructions at connect time.
+- [M365 Copilot prompt injection and ASCII smuggling](https://embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/) - Chain combining automatic tool invocation with invisible Unicode tags to exfiltrate data.
+- [MCP Inspector RCE (CVE-2025-49596)](https://www.oligo.security/blog/critical-rce-vulnerability-in-anthropic-mcp-inspector-cve-2025-49596) - Oligo Security on an unauthenticated local proxy reachable from a browser page.
+- [mcp-remote OS command injection (CVE-2025-6514)](https://jfrog.com/blog/2025-6514-critical-mcp-remote-rce-vulnerability/) - JFrog on a malicious MCP server triggering command execution on the client through an OAuth URL.
+- [Month of AI Bugs](https://embracethered.com/blog/posts/2025/announcement-the-month-of-ai-bugs/) - Series of disclosures across AI coding agents and assistants, one per day for August 2025.
+- [Nx s1ngularity postmortem](https://nx.dev/blog/s1ngularity-postmortem) - Postmortem of compromised npm releases that used installed AI CLIs to hunt for secrets.
+- [Postmark-mcp analysis](https://snyk.io/blog/malicious-mcp-server-on-npm-postmark-mcp-harvests-emails/) - Snyk analysis of the first documented malicious MCP server on npm.
+- [Postmark: malicious postmark-mcp package](https://postmarkapp.com/blog/information-regarding-malicious-postmark-mcp-package) - Vendor notice on an impersonating MCP server that blind-copied all outgoing email.
+- [Rules File Backdoor](https://www.pillar.security/blog/new-vulnerability-in-github-copilot-and-cursor-how-hackers-can-weaponize-code-agents) - Pillar Security on hidden Unicode in agent rule files steering Copilot and Cursor output.
+- [Slack AI data exfiltration](https://promptarmor.substack.com/p/data-exfiltration-from-slack-ai-via) - PromptArmor on injection in public channels leaking private channel data through Slack AI.
+- [Slopsquatting](https://socket.dev/blog/slopsquatting-how-ai-hallucinations-are-fueling-a-new-class-of-supply-chain-attacks) - Socket on attackers registering package names that coding assistants hallucinate.
+- [SpAIware: persistent exfiltration via ChatGPT memory](https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/) - Injection that planted instructions in long-term memory to exfiltrate future chats.
+- [Supabase MCP can leak your entire SQL database](https://www.generalanalysis.com/blog/supabase-mcp-blog) - General Analysis on support ticket text driving a privileged MCP agent to leak tables.
+- [The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) - Simon Willison on why private data, untrusted content, and external communication together enable exfiltration.
+- [Tool poisoning attacks](https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks) - Invariant Labs disclosure of hidden instructions in MCP tool descriptions.
+- [Vulnerable MCP Project](https://vulnerablemcp.info/) - Community database of MCP vulnerabilities and security research.
+- [WhatsApp MCP exploited](https://invariantlabs.ai/blog/whatsapp-mcp-exploited) - Invariant Labs on a malicious MCP server exfiltrating message history through a trusted WhatsApp server.
 
 ## Contributing
 
