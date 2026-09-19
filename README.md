@@ -10,6 +10,7 @@ Defensive focus. Every entry links to its original source.
 - [Research Papers](#research-papers)
 - [Incidents and Writeups](#incidents-and-writeups)
 - [Defensive Tools](#defensive-tools)
+- [Benchmarks and Datasets](#benchmarks-and-datasets)
 <!-- toc-end -->
 
 ## Frameworks and Standards
@@ -132,6 +133,23 @@ Defensive focus. Every entry links to its original source.
 - [Sandbox Runtime](https://github.com/anthropics/sandbox-runtime) - OS-level filesystem and network sandbox for arbitrary processes, used by Claude Code.
 - [ToolHive](https://github.com/stacklok/toolhive) - Runs and manages MCP servers in containers with permission profiles and secret handling.
 - [Vigil](https://github.com/deadbits/vigil-llm) - Detects prompt injections and risky inputs with vector similarity, YARA, and heuristics (unmaintained since 2024).
+
+## Benchmarks and Datasets
+
+- [Agent Security Bench (ASB)](https://github.com/agiresearch/ASB) - Benchmark of attacks and defenses across agent scenarios, tools, and memory.
+- [AgentDojo](https://github.com/ethz-spylab/agentdojo) - Dynamic environment for evaluating prompt injection attacks and defenses on tool-using agents.
+- [AgentHarm](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) - UK AI Security Institute dataset of harmful multi-step agent tasks.
+- [BIPIA](https://github.com/microsoft/BIPIA) - Benchmark for indirect prompt injection across email, table, and code tasks (archived).
+- [deepset prompt-injections](https://huggingface.co/datasets/deepset/prompt-injections) - Labeled dataset for training and testing prompt injection classifiers.
+- [HarmBench](https://github.com/centerforaisafety/HarmBench) - Standardized framework for evaluating automated red teaming and refusal.
+- [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) - Benchmark of indirect prompt injections through tool outputs in agents.
+- [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) - Open benchmark and leaderboard for jailbreak attacks and defenses.
+- [LLMail-Inject challenge code](https://github.com/microsoft/llmail-inject-challenge) - Code for the API, agents, and workloads behind the LLMail-Inject challenge.
+- [LLMail-Inject dataset](https://huggingface.co/datasets/microsoft/llmail-inject-challenge) - Submissions from Microsoft's adaptive prompt injection challenge against an email agent.
+- [PINT Benchmark](https://github.com/lakeraai/pint-benchmark) - Benchmark for comparing prompt injection detection systems (archived).
+- [Tensor Trust](https://github.com/HumanCompatibleAI/tensor-trust) - Game and dataset of human-written prompt injection attacks and defenses.
+- [ToolEmu](https://github.com/ryoungj/ToolEmu) - LM-emulated tool sandbox for identifying risky agent actions.
+- [WASP](https://github.com/facebookresearch/wasp) - Benchmark for web agent security against prompt injection (archived).
 
 ## Contributing
 
