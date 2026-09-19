@@ -11,6 +11,7 @@ Defensive focus. Every entry links to its original source.
 - [Incidents and Writeups](#incidents-and-writeups)
 - [Defensive Tools](#defensive-tools)
 - [Benchmarks and Datasets](#benchmarks-and-datasets)
+- [Vendor Security Guidance](#vendor-security-guidance)
 <!-- toc-end -->
 
 ## Frameworks and Standards
@@ -150,6 +151,30 @@ Defensive focus. Every entry links to its original source.
 - [Tensor Trust](https://github.com/HumanCompatibleAI/tensor-trust) - Game and dataset of human-written prompt injection attacks and defenses.
 - [ToolEmu](https://github.com/ryoungj/ToolEmu) - LM-emulated tool sandbox for identifying risky agent actions.
 - [WASP](https://github.com/facebookresearch/wasp) - Benchmark for web agent security against prompt injection (archived).
+
+## Vendor Security Guidance
+
+- [Anthropic: Claude Code development containers](https://code.claude.com/docs/en/devcontainer) - Reference devcontainer with a firewall for running Claude Code with reduced host exposure.
+- [Anthropic: Claude Code sandboxing](https://code.claude.com/docs/en/sandboxing) - How Claude Code isolates filesystem and network access for bash commands.
+- [Anthropic: Claude Code security](https://code.claude.com/docs/en/security) - Permission model, prompt injection protections, and practices for working with untrusted content.
+- [Anthropic: Making Claude Code more secure and autonomous with sandboxing](https://www.anthropic.com/engineering/claude-code-sandboxing) - Engineering post on the design of Claude Code's OS-level sandbox.
+- [Anthropic: Mitigate jailbreaks and prompt injections](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks) - API guidance on harmlessness screens, input validation, and layered safeguards.
+- [Anthropic: Prompt injection defenses in browser use](https://www.anthropic.com/research/prompt-injection-defenses) - Research post on training and classifier defenses for browsing agents.
+- [AWS: The Agentic AI Security Scoping Matrix](https://aws.amazon.com/blogs/security/the-agentic-ai-security-scoping-matrix-a-framework-for-securing-autonomous-ai-systems/) - Framework for scoping controls by agent autonomy and agency.
+- [GitHub: About Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent) - Describes the agent's built-in protections, firewall, and limits on what it can push.
+- [Google: An Introduction to Google's Approach to AI Agent Security](https://research.google/pubs/an-introduction-to-googles-approach-for-secure-ai-agents/) - Whitepaper on human controllers, limited powers, and observable actions for agents.
+- [Google: Gemini API safety guidance](https://ai.google.dev/gemini-api/docs/safety-guidance) - Developer guidance on testing and safeguarding Gemini applications.
+- [Google: Mitigating prompt injection attacks with a layered defense strategy](https://blog.google/security/mitigating-prompt-injection-attacks/) - Google's layered defenses for Gemini against indirect prompt injection.
+- [Microsoft: Defend against indirect prompt injection attacks](https://learn.microsoft.com/en-us/security/zero-trust/sfi/defend-indirect-prompt-injection) - Secure Future Initiative guidance on preventing and detecting indirect injection.
+- [Microsoft: How Microsoft defends against indirect prompt injection attacks](https://www.microsoft.com/en-us/msrc/blog/2025/07/how-microsoft-defends-against-indirect-prompt-injection-attacks) - MSRC post on preventive, detective, and impact-limiting controls in Copilot.
+- [Microsoft: Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection) - Azure AI Content Safety feature for detecting user and document prompt attacks.
+- [Microsoft: Protecting against indirect prompt injection attacks in MCP](https://developer.microsoft.com/blog/protecting-against-indirect-injection-attacks-mcp/) - Guidance on tool poisoning and injection risks for MCP servers and clients.
+- [Microsoft: Taxonomy of failure modes in AI agents](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents/) - Microsoft AI Red Team whitepaper on security and safety failure modes in agents.
+- [NVIDIA: Practical LLM security advice from the NVIDIA AI Red Team](https://developer.nvidia.com/blog/practical-llm-security-advice-from-the-nvidia-ai-red-team/) - Common vulnerabilities found in LLM applications and how to fix them.
+- [OpenAI: Codex agent approvals and security](https://learn.chatgpt.com/docs/agent-approvals-security) - Sandbox modes, approval policies, and network controls for Codex.
+- [OpenAI: Codex sandbox](https://github.com/openai/codex/blob/main/docs/sandbox.md) - How the open-source Codex CLI sandboxes commands on macOS, Linux, and Windows.
+- [OpenAI: Safety in building agents](https://developers.openai.com/api/docs/guides/agent-builder-safety) - Guidance on prompt injection, structured outputs, and tool approvals for agent builders.
+- [OpenAI: Understanding prompt injections](https://openai.com/index/prompt-injections/) - OpenAI's overview of prompt injection risk and its layered safeguards.
 
 ## Contributing
 
