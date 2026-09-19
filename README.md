@@ -9,6 +9,7 @@ Defensive focus. Every entry links to its original source.
 - [Frameworks and Standards](#frameworks-and-standards)
 - [Research Papers](#research-papers)
 - [Incidents and Writeups](#incidents-and-writeups)
+- [Defensive Tools](#defensive-tools)
 <!-- toc-end -->
 
 ## Frameworks and Standards
@@ -103,6 +104,34 @@ Defensive focus. Every entry links to its original source.
 - [Tool poisoning attacks](https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks) - Invariant Labs disclosure of hidden instructions in MCP tool descriptions.
 - [Vulnerable MCP Project](https://vulnerablemcp.info/) - Community database of MCP vulnerabilities and security research.
 - [WhatsApp MCP exploited](https://invariantlabs.ai/blog/whatsapp-mcp-exploited) - Invariant Labs on a malicious MCP server exfiltrating message history through a trusted WhatsApp server.
+
+## Defensive Tools
+
+- [Agent Scan](https://github.com/snyk/agent-scan) - Scanner for MCP servers, agent configs, and skills that flags tool poisoning and toxic flows (formerly mcp-scan).
+- [Agentic Radar](https://github.com/splx-ai/agentic-radar) - Static scanner that maps agent workflows, tools, and MCP servers and reports vulnerabilities.
+- [CaMeL reference implementation](https://github.com/google-research/camel-prompt-injection) - Research code for the capability-based CaMeL defense against prompt injection.
+- [Claude Code Security Review](https://github.com/anthropics/claude-code-security-review) - GitHub Action that runs a security review of pull request changes.
+- [Docker MCP Gateway](https://github.com/docker/mcp-gateway) - Runs MCP servers in isolated containers behind a single gateway with secrets and policy controls.
+- [E2B](https://github.com/e2b-dev/E2B) - Open-source cloud sandboxes for running agent-generated code in isolated microVMs.
+- [Firecracker](https://github.com/firecracker-microvm/firecracker) - Lightweight microVM monitor used to isolate untrusted workloads such as agent code execution.
+- [garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner that probes for prompt injection, data leakage, and jailbreaks.
+- [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Framework of input and output validators for LLM applications.
+- [gVisor](https://github.com/google/gvisor) - User-space application kernel that sandboxes containers running untrusted code.
+- [Invariant Guardrails](https://github.com/invariantlabs-ai/invariant) - Rule-based guardrail layer that checks agent traces and tool calls against policies.
+- [Llama Prompt Guard 2](https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M) - Small classifier model for detecting prompt injection and jailbreak inputs.
+- [LLM Guard](https://github.com/protectai/llm-guard) - Input and output scanners for injection, secrets, and PII (archived, still usable as reference).
+- [MCP Context Protector](https://github.com/trailofbits/mcp-context-protector) - Trail of Bits wrapper that pins MCP server tool descriptions and sanitizes tool output.
+- [MCP Scanner](https://github.com/cisco-ai-defense/mcp-scanner) - Cisco scanner that inspects MCP servers and tools for security findings.
+- [Model Transparency](https://github.com/sigstore/model-transparency) - Sigstore project for signing and verifying ML models to secure the model supply chain.
+- [ModelScan](https://github.com/protectai/modelscan) - Scans serialized model files for unsafe code before loading.
+- [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) - Toolkit for programmable input, output, and dialog rails around LLM applications.
+- [Presidio](https://github.com/data-privacy-stack/presidio) - Detects and redacts PII in text and images before it reaches or leaves a model.
+- [promptfoo](https://github.com/promptfoo/promptfoo) - Test and red teaming tool for prompts, agents, and RAG pipelines with CI integration.
+- [PurpleLlama](https://github.com/meta-llama/PurpleLlama) - Meta's LLM security tools including LlamaFirewall, Llama Guard, and CyberSecEval.
+- [PyRIT](https://github.com/microsoft/PyRIT) - Microsoft's Python Risk Identification Tool for red teaming generative AI systems.
+- [Sandbox Runtime](https://github.com/anthropics/sandbox-runtime) - OS-level filesystem and network sandbox for arbitrary processes, used by Claude Code.
+- [ToolHive](https://github.com/stacklok/toolhive) - Runs and manages MCP servers in containers with permission profiles and secret handling.
+- [Vigil](https://github.com/deadbits/vigil-llm) - Detects prompt injections and risky inputs with vector similarity, YARA, and heuristics (unmaintained since 2024).
 
 ## Contributing
 
