@@ -12,6 +12,7 @@ Defensive focus. Every entry links to its original source.
 - [Defensive Tools](#defensive-tools)
 - [Benchmarks and Datasets](#benchmarks-and-datasets)
 - [Vendor Security Guidance](#vendor-security-guidance)
+- [Courses and Guides](#courses-and-guides)
 <!-- toc-end -->
 
 ## Frameworks and Standards
@@ -175,6 +176,17 @@ Defensive focus. Every entry links to its original source.
 - [OpenAI: Codex sandbox](https://github.com/openai/codex/blob/main/docs/sandbox.md) - How the open-source Codex CLI sandboxes commands on macOS, Linux, and Windows.
 - [OpenAI: Safety in building agents](https://developers.openai.com/api/docs/guides/agent-builder-safety) - Guidance on prompt injection, structured outputs, and tool approvals for agent builders.
 - [OpenAI: Understanding prompt injections](https://openai.com/index/prompt-injections/) - OpenAI's overview of prompt injection risk and its layered safeguards.
+
+## Courses and Guides
+
+- [Embrace The Red](https://embracethered.com/blog/) - Johann Rehberger's blog of prompt injection and agent vulnerability research with vendor fixes.
+- [Microsoft AI Red Teaming training](https://learn.microsoft.com/en-us/security/ai-red-team/training) - Microsoft's AI red teaming training series and resources.
+- [OWASP LLM Prompt Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html) - Practical checklist of prompt injection defenses for developers.
+- [OWASP Securing Agentic Applications Guide](https://genai.owasp.org/resource/securing-agentic-applications-guide-1-0/) - Technical guidance for securing agent architectures across design, build, and deployment.
+- [PortSwigger Web Security Academy: Web LLM attacks](https://portswigger.net/web-security/llm-attacks) - Free lessons and labs on LLM API abuse, indirect injection, and insecure output handling.
+- [Red Teaming LLM Applications](https://www.deeplearning.ai/courses/red-teaming-llm-applications) - DeepLearning.AI short course on finding vulnerabilities in LLM applications.
+- [Simon Willison: prompt injection](https://simonwillison.net/tags/prompt-injection/) - Long-running collection of posts on prompt injection and agent security.
+- [The Dual LLM pattern](https://simonwillison.net/2023/Apr/25/dual-llm-pattern/) - Design pattern that keeps a privileged model away from untrusted content.
 
 ## Contributing
 
