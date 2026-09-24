@@ -96,6 +96,7 @@ Defensive focus. Every entry links to its original source.
 - [mcp-remote OS command injection (CVE-2025-6514)](https://jfrog.com/blog/2025-6514-critical-mcp-remote-rce-vulnerability/) - JFrog on a malicious MCP server triggering command execution on the client through an OAuth URL.
 - [Month of AI Bugs](https://embracethered.com/blog/posts/2025/announcement-the-month-of-ai-bugs/) - Series of disclosures across AI coding agents and assistants, one per day for August 2025.
 - [Nx s1ngularity postmortem](https://nx.dev/blog/s1ngularity-postmortem) - Postmortem of compromised npm releases that used installed AI CLIs to hunt for secrets.
+- [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) - Open database of real-world AI agent security incidents, each linked to its primary sources and labeled for confirmed harm and AI involvement.
 - [Postmark-mcp analysis](https://snyk.io/blog/malicious-mcp-server-on-npm-postmark-mcp-harvests-emails/) - Snyk analysis of the first documented malicious MCP server on npm.
 - [Postmark: malicious postmark-mcp package](https://postmarkapp.com/blog/information-regarding-malicious-postmark-mcp-package) - Vendor notice on an impersonating MCP server that blind-copied all outgoing email.
 - [Rules File Backdoor](https://www.pillar.security/blog/new-vulnerability-in-github-copilot-and-cursor-how-hackers-can-weaponize-code-agents) - Pillar Security on hidden Unicode in agent rule files steering Copilot and Cursor output.
