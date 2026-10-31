@@ -120,6 +120,7 @@ Defensive focus. Every entry links to its original source.
 - [garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner that probes for prompt injection, data leakage, and jailbreaks.
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Framework of input and output validators for LLM applications.
 - [gVisor](https://github.com/google/gvisor) - User-space application kernel that sandboxes containers running untrusted code.
+- [HOL Guard](https://github.com/hashgraph-online/hol-guard) - Local-first security tool for scanning agent skills, plugins and MCP configurations, and gating supported actions with policy checks.
 - [Invariant Guardrails](https://github.com/invariantlabs-ai/invariant) - Rule-based guardrail layer that checks agent traces and tool calls against policies.
 - [Llama Prompt Guard 2](https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M) - Small classifier model for detecting prompt injection and jailbreak inputs.
 - [LLM Guard](https://github.com/protectai/llm-guard) - Input and output scanners for injection, secrets, and PII (archived, still usable as reference).
